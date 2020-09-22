@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Chuyển đổi giữa feet và meters</title>
+</head>
+<strong>Length Converter</strong>
+<p>Converter Meter to Foot</p>
+<body>
+
+    <p>
+        <label>Feet</label>
+        <input id="inputFeet" type="number" placeholder="Feet to Meter "
+        oninput="LengthConverter(this.value)"
+        onchange="LengthConverter(this.value)">
+    </p>
+    <p>Meter:<span id ="outputMeter"> </span></p>
+    <script>
+        function LengthConverter(Num){
+            document.getElementById("outputMeter").innerHTML=Num/3.279
+        }
+</script>
+
+<br/>
+
+    <p>
+        <label>Meter</label>
+        <input id ="inputMeter" type="number" placeholder="Meter to Feet"
+               oninput="LengthConverter(this.value)"
+               onchange="LengthConverter(this.value)" >
+    </p>
+    <p>Feet :<span id="outputFeet"> </span></p>
+    <script>
+        function LengthConverter(valNum){
+            document.getElementById("outputFeet").innerHTML=valNum*3.2808
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>meter to feet</title>
+</head>
+<body>
+<p>
+    <label>Meter</label>
+    <input id ="inputMeter" type="number" placeholder="Meter to Feet"
+           oninput="LengthConverter(this.value)"
+           onchange="LengthConverter(this.value)" >
+</p>
+<p>Feet :<span id="outputFeet"> </span></p>
+<script>
+    function LengthConverter(valNum){
+        document.getElementById("outputFeet").innerHTML=valNum/0.305
+    }
+</script>
+</body>
+</html>
